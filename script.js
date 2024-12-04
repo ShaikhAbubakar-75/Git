@@ -5,6 +5,9 @@ document.getElementById('play-button').addEventListener('click', () => {
 document.getElementsByClassName('menu-button').addEventListener('click', () => {
   alert('Enter Setting Mode');
 })
+
+
+
 const body = document.getElementsByTagName('body')[0]
 
 const p = document.createElement('p')
@@ -12,7 +15,7 @@ const btn = document.createElement('button')
 btn.textContent = "Generate Random Number";
 
 function generateRandomeNumber() {
-  p.innerHTML = Math.floor(Math.random())
+  p.innerHTML = Math.floor(Math.random()*101)
 }
 btn.addEventListener('click', () => {
   generateRandomeNumber()
